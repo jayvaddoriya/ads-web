@@ -1,15 +1,7 @@
 /**
  * Google AdSense Configuration
  * 
- * Replace 'client' with your actual Google AdSense publisher ID (e.g., 'ca-pub-1234567890123456')
- * and update the slot IDs with your Google AdSense dashboard ad units.
- * 
- * When 'isTestMode' is true:
- * - Attractive, responsive placeholder ads are shown with mock sponsored content
- * - Allows testing CTR, responsive design, and layout shifts without risking AdSense policy violations
- * 
- * When 'isTestMode' is false:
- * - Real Google AdSense tags (<ins class="adsbygoogle">) and scripts are executed.
+ * Configured with active publisher ID: ca-pub-1539263458228927
  */
 
 export interface AdSenseConfig {
@@ -26,13 +18,13 @@ export interface AdSenseConfig {
 }
 
 export const ADSENSE_CONFIG: AdSenseConfig = {
-  // Set your actual Google AdSense Publisher ID here (starts with 'ca-pub-')
-  client: "ca-pub-0000000000000000",
+  // Your verified Google AdSense Publisher ID
+  client: "ca-pub-1539263458228927",
   
-  // Set to false when your AdSense account is approved and you want to serve live ads
-  isTestMode: true,
+  // Set to false to enable real Google AdSense scripts & tags
+  isTestMode: false,
 
-  // Replace with slot IDs created in your Google AdSense console
+  // Replace with custom slot IDs when created in your AdSense dashboard
   slots: {
     headerLeaderboard: "1001001001",
     stickyAnchor: "2002002002",
